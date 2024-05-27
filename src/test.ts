@@ -1,3 +1,7 @@
-let x: number = 10;
-let y: number = 5;
-let result = x + y;
+type Shape = { color: string; sides: number };
+type Square = { color: string; sides: number; sideLength: number };
+
+const redSquare: Square = { color: "red", sides: 4, sideLength: 5 };
+const shape: Shape = redSquare;
+
+console.log(shape.sideLength);
